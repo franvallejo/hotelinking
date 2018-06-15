@@ -13,7 +13,8 @@ class Users extends Querys
         return $this->select($params);
     }
 
-    function newUser($params) {
+    function newUser($params)
+    {
         return $this->insert($params);
     }
 }
