@@ -2,5 +2,4 @@
 
 1- Copiar el proyecto en el directorio "www" de Apache
 
-2- Copiar la siguiente url en la barra de direcciones del navegador
-    http://localhost/hotelinking/install.php
+2- Click en el siguiente enlace: http://localhost/hotelinking/install.php
