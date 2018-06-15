@@ -8,5 +8,12 @@
  */
 class Users extends Querys
 {
+    function getUsers($params)
+    {
+        return $this->select($params);
+    }
 
+    function newUser($params) {
+        return $this->insert($params);
+    }
 }

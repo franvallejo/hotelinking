@@ -8,5 +8,15 @@
  */
 class Promos extends Querys
 {
+    function newPromo($params) {
+        return $this->insert($params);
+    }
 
+    function getPromo($params) {
+        return $this->select($params);
+    }
+
+    function updatePromo($params) {
+        return $this->update($params);
+    }
 }

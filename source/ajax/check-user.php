@@ -29,7 +29,7 @@ try {
         ]
     ];
 
-    $result = $user->select($params);
+    $result = $user->getUsers($params);
     $rows = $result->rowCount();
     $result = null; // Se cierra conexión con BBDD
 
@@ -42,7 +42,7 @@ try {
                 'pass' => $currentPass
             ]
         ];
-        $result = $user->insert($params);
+        $result = $user->newUser($params);
         $result = null; // Se cierra conexión con BBDD
         echo json_encode('newUser');
     } else if ($type == 'registro' && $rows >= 1) {
@@ -60,7 +60,7 @@ try {
                 'name' => $currentUser
             ]
         ];
-        $result = $user->select($params);
+        $result = $user->getUsers($params);
         unset($_SESSION['id_user']);
         $_SESSION['id_user'] = $result->fetchAll();
         $result = null; // Se cierra conexión con BBDD

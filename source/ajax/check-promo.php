@@ -29,7 +29,7 @@ try {
             ]
         ];
 
-        $result = $promo->insert($params);
+        $result = $promo->newPromo($params);
         $result = null; // Se cierra conexión con BBDD
         exit;
     } else if ($type == 'listado') {
@@ -41,7 +41,7 @@ try {
             ]
         ];
 
-        $result = $promo->select($params);
+        $result = $promo->getPromo($params);
         $result = $result->fetchAll();
         echo json_encode($result);
         $result = null; // Se cierra conexión con BBDD
@@ -59,7 +59,7 @@ try {
             'condition' => $promo_name
         ];
 
-        $result = $promo->update($params);
+        $result = $promo->updatePromo($params);
         $result = null; // Se cierra conexión con BBDD
         exit;
     }

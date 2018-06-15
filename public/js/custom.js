@@ -28,13 +28,13 @@ function checkUser(type) {
                     $('#info').text('Inicia Sesión');
                     $('#infoBox').fadeIn();
                     $('#succesBox').fadeIn();
-                    $('#succesBox').fadeOut(5000);
-                    $('#infoBox').fadeOut(5700);
+                    $('#succesBox').fadeOut(4000);
+                    $('#infoBox').fadeOut(4700);
                 } else if (data == 'member') {
                     $('#ModalRegistro').modal('hide');
                     $('#warning').text('Este usuario ya posee una cuenta');
                     setTimeout($('#warningBox').fadeIn(), 6000);
-                    $('#warningBox').fadeOut(3500);
+                    $('#warningBox').fadeOut(2500);
                 }
 
                 //console.log(data + ' ----- ha ido bien');
@@ -45,7 +45,7 @@ function checkUser(type) {
                     $('#codeGeneratorBox').fadeOut();
                     $('#warning').text('Usuario no registrado');
                     setTimeout($('#warningBox').fadeIn(), 6000);
-                    $('#warningBox').fadeOut(3500);
+                    $('#warningBox').fadeOut(2500);
                 } else if (data == 'member') {
                     $('#login').css('display', 'none');
                     $('#registro').css('display', 'none');
@@ -54,7 +54,7 @@ function checkUser(type) {
                     $('#ModalLogin').modal('hide');
                     $('#success').text('Bienvenido ' + name);
                     setTimeout($('#succesBox').fadeIn(), 5000);
-                    $('#succesBox').fadeOut(4000);
+                    $('#succesBox').fadeOut(3000);
                     $('#codeGeneratorBox').fadeIn(5500);
                 }
             }
@@ -101,7 +101,7 @@ function checkPromo(type) {
                 $('#ModalPromosList').modal('hide');
                 $('#warning').text('Seleccione alguna Promoción');
                 setTimeout($('#warningBox').fadeIn(), 6000);
-                $('#warningBox').fadeOut(3500);
+                $('#warningBox').fadeOut(2500);
                 return;
             }
             break;
@@ -144,7 +144,7 @@ function checkPromo(type) {
                 $('#ModalPromosList').modal('hide');
                 $('#success').text('Código Promocional Canjeado');
                 setTimeout($('#succesBox').fadeIn(), 6000);
-                $('#succesBox').fadeOut(3500);
+                $('#succesBox').fadeOut(2500);
             }
 
             //console.log(data + ' ----- ha ido bien');
