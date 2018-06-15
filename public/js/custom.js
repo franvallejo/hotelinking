@@ -28,13 +28,13 @@ function checkUser(type) {
                     $('#info').text('Inicia Sesión');
                     $('#infoBox').fadeIn();
                     $('#succesBox').fadeIn();
-                    $('#succesBox').fadeOut(2000);
-                    $('#infoBox').fadeOut(2300);
+                    $('#succesBox').fadeOut(5000);
+                    $('#infoBox').fadeOut(5700);
                 } else if (data == 'member') {
                     $('#ModalRegistro').modal('hide');
                     $('#warning').text('Este usuario ya posee una cuenta');
                     setTimeout($('#warningBox').fadeIn(), 6000);
-                    $('#warningBox').fadeOut(1500);
+                    $('#warningBox').fadeOut(3500);
                 }
 
                 //console.log(data + ' ----- ha ido bien');
@@ -45,7 +45,7 @@ function checkUser(type) {
                     $('#codeGeneratorBox').fadeOut();
                     $('#warning').text('Usuario no registrado');
                     setTimeout($('#warningBox').fadeIn(), 6000);
-                    $('#warningBox').fadeOut(1500);
+                    $('#warningBox').fadeOut(3500);
                 } else if (data == 'member') {
                     $('#login').css('display', 'none');
                     $('#registro').css('display', 'none');
@@ -53,8 +53,8 @@ function checkUser(type) {
                     $('#ModalLogin').modal('hide');
                     $('#success').text('Bienvenido ' + name);
                     setTimeout($('#succesBox').fadeIn(), 6000);
-                    $('#succesBox').fadeOut(1500);
-                    $('#codeGeneratorBox').fadeIn(3500);
+                    $('#succesBox').fadeOut(6500);
+                    $('#codeGeneratorBox').fadeIn(5500);
                 }
             }
         } else {
@@ -71,14 +71,14 @@ function checkUser(type) {
 }
 
 function checkPromo(type) {
-    var rows = '';
+    var checkBox = '';
     switch (type) {
         case 'registro':
             var checked = false;
             var promo = Math.floor((Math.random() * 100000) + 1);
             $('#success').text('Código Promocional: ' + promo);
             $('#succesBox').fadeIn(500);
-            $('#succesBox').fadeOut(2000);
+            $('#succesBox').fadeOut(4000);
             break;
         case 'listado':
             var checked = '';
@@ -100,7 +100,7 @@ function checkPromo(type) {
                 $('#ModalPromosList').modal('hide');
                 $('#warning').text('Seleccione alguna Promoción');
                 setTimeout($('#warningBox').fadeIn(), 6000);
-                $('#warningBox').fadeOut(1500);
+                $('#warningBox').fadeOut(3500);
                 return;
             }
             break;
@@ -128,7 +128,7 @@ function checkPromo(type) {
                         var disabled = 'disabled';
                         var style = 'opacity';
                     }
-                    rows +=
+                    checkBox +=
                         '<tr><td id="">' + value.promo + '</td><td class="' + style + '">' + estado + '</td>' +
                         '<td><label class="custom-control custom-checkbox">' +
                         '<input type="checkbox" class="check-boxes" data-atribute="' + value.promo + '" ' + disabled + '>' +
@@ -137,13 +137,13 @@ function checkPromo(type) {
                         '</label></td></tr>';
                 });
                 $('#modal-body-promo-list').html('');
-                $('#modal-body-promo-list').append(rows);
+                $('#modal-body-promo-list').append(checkBox);
             }
             if (type == 'canjear') {
                 $('#ModalPromosList').modal('hide');
                 $('#success').text('Código Promocional Canjeado');
                 setTimeout($('#succesBox').fadeIn(), 6000);
-                $('#succesBox').fadeOut(1500);
+                $('#succesBox').fadeOut(3500);
             }
 
             //console.log(data + ' ----- ha ido bien');
@@ -157,7 +157,7 @@ function checkPromo(type) {
                 $('#ModalPromosList').modal('hide');
                 $('#warning').text('No tiene códigos promocionales');
                 setTimeout($('#warningBox').fadeIn(), 6000);
-                $('#warningBox').fadeOut(1500);
+                $('#warningBox').fadeOut(3500);
             }
         }
     }).fail(function (xhr, textStatus, errorThrown) {
