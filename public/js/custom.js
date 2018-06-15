@@ -50,10 +50,11 @@ function checkUser(type) {
                     $('#login').css('display', 'none');
                     $('#registro').css('display', 'none');
                     $('#logout').css('display', 'block');
+                    $('#reset').css('display', 'block');
                     $('#ModalLogin').modal('hide');
                     $('#success').text('Bienvenido ' + name);
-                    setTimeout($('#succesBox').fadeIn(), 6000);
-                    $('#succesBox').fadeOut(6500);
+                    setTimeout($('#succesBox').fadeIn(), 5000);
+                    $('#succesBox').fadeOut(4000);
                     $('#codeGeneratorBox').fadeIn(5500);
                 }
             }
@@ -78,7 +79,7 @@ function checkPromo(type) {
             var promo = Math.floor((Math.random() * 100000) + 1);
             $('#success').text('Código Promocional: ' + promo);
             $('#succesBox').fadeIn(500);
-            $('#succesBox').fadeOut(4000);
+            $('#succesBox').fadeOut(2000);
             break;
         case 'listado':
             var checked = '';
@@ -157,7 +158,7 @@ function checkPromo(type) {
                 $('#ModalPromosList').modal('hide');
                 $('#warning').text('No tiene códigos promocionales');
                 setTimeout($('#warningBox').fadeIn(), 6000);
-                $('#warningBox').fadeOut(3500);
+                $('#warningBox').fadeOut(3000);
             }
         }
     }).fail(function (xhr, textStatus, errorThrown) {

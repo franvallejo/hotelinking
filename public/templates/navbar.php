@@ -14,6 +14,9 @@
                 <a id="logout" class="nav-link" href="http://localhost/hotelinking/" style="display: none;">Cerrar
                     Sesión</a>
             </li>
+            <li class="nav-item">
+                <a id="reset" class="nav-link" href="http://localhost/hotelinking/install.php" style="display: none;">Reset App</a>
+            </li>
         </ul>
     </div>
 </nav>
