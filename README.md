@@ -6,4 +6,4 @@
 
 3- Click en el siguiente enlace: http://localhost/hotelinking/install.php
 
-commit de prueba3
+commit de prueba4

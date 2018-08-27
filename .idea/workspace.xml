@@ -309,7 +309,7 @@
       <workItem from="1529020915952" duration="1745000" />
       <workItem from="1529058998637" duration="4472000" />
       <workItem from="1535321391880" duration="981000" />
-      <workItem from="1535408667050" duration="1697000" />
+      <workItem from="1535408667050" duration="2170000" />
     </task>
     <task id="LOCAL-00001" summary="- Commit desde phpstorm">
       <created>1535321749033</created>
@@ -332,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535412286340</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Commit de prueba3">
+      <created>1535412634861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535412634861</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134957000" />
+    <option name="totallyTimeSpent" value="135430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -372,7 +379,8 @@
     <MESSAGE value="- Commit desde phpstorm" />
     <MESSAGE value="- Commit de prueba1" />
     <MESSAGE value="- Commit de prueba2" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Commit de prueba2" />
+    <MESSAGE value="- Commit de prueba3" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Commit de prueba3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
